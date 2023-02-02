@@ -4,15 +4,18 @@ export default class extends Controller {
   /**On start */
   connect(){
     console.log("Connected");
-    const message = document.getElementsById("messages");
-    message.addEventListener("DOMNodeInserted", this.resetScroll);
-    this.resetScroll(message);
+    const messages = document.getElementById("messages");
+    messages.addEventListener("DOMNodeInserted", this.resetScroll);
+    this.resetScroll(messages);
   }
   /**On stop */
   disconnect(){
     console.log("Disconnected");
+    messages.removeEventListener("DOMNodeInserted", this.resetScroll);
   }
 
   /** Custom function */
-  resetScroll() {}
+  resetScroll() {
+    messages.scrollTop = messages.scrollHeight - messages.clientHeight;
+  }
 }
