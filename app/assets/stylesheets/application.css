@@ -14,7 +14,7 @@
  *= require_self
  */
 
- body {
+body {
   overflow: hidden;
 }
 .msg-form {
@@ -33,6 +33,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
 #room_container {
   height: 100vh;
   margin-right: 0px !important;
@@ -52,8 +53,6 @@
   overflow-y: hidden;
 }
 
-
-
 .msg-form {
   width:  80%;
   margin-right: 5px;
@@ -68,14 +67,77 @@
 .msessage-box {
   word-wrap: break-word;
   width:  fit-content;
+  overflow-y: scroll;
   max-width: 40%;
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #333;
+  background-color: #555;
   padding: 10px;
 }
 
-.messages-container{
+.messages-container {
+  height: 100vh;
+  overflow-y: scroll;
   background-color: #000500;
 }
+
+.user_row {
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.username {
+  overflow: hidden;
+}
+
+.chat_pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user_row{
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.username {
+  overflow: hidden;
+}
+
+.chat_pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user_list_item {
+  height: 55px;
+  background-color: #343a50 !important;
+}
+
+.room_list_item {
+  height: 55px;
+  background-color: #343a50 !important;
+}
+
+.name {
+  margin-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.time {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+
