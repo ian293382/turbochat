@@ -1,9 +1,14 @@
 # README
 
+Build your first 50 Rails apps as quickly as possible. - https://ihower.tw/rails/rails-recipes-front-end.html
+
 Development Setup
 Commands that were run during development:
 
 References:
+
+ This is from video Tutorial: https://www.youtube.com/watch?v=UvTLumcEMgU&list=PL3mtAHT_eRex1sJI2uoTBgFT3qAXFbEcy&index=1&ab_channel=Deanin
+
 Making Devise Work https://betterprogramming.pub/devise-auth-setup-in-rails-7-44240aaed4be
 
 Making Chat App Work https://www.honeybadger.io/blog/chat-app-rails-actioncable-turbo/

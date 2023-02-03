@@ -4,10 +4,10 @@ class Room < ApplicationRecord
   after_create_commit { broadcast_if_public }
 
   has_many :messages, dependent: :destroy
-  has_many :participant, dependent: :destroy
+  has_many :participants, dependent: :destroy
   # 要定義 private 以及public room  => broadcast_if_public
   def broadcast_if_public
-    broadcast_append_to "rooms" unless self.is_private
+    broadcast_append_to 'rooms' unless is_private
   end
 
   def self.create_private_room(users, room_name)
@@ -17,5 +17,10 @@ class Room < ApplicationRecord
     end
     # output single room
     single_room
+  end
+
+  def participant?(room, user)
+    room.participants.where(user: user).exists?
+    Participant.where(user_id: user.id, room_id: room.id).exists?
   end
 end
