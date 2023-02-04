@@ -2,9 +2,9 @@
   <div class="message-box msg-<%= message.user.id %> ">
     <div class=" d-flex align-items-center">
       <%= image_tag(message.user.pfp, class:'chat_pfp') %>
-        <%# <% unless message.room.is_private %>
+        <% unless message.room.is_private %>
           <h6 class="name"> <%= message.user.email %> </h6>
-        <%# <% end %>
+        <% end %>
     </div>
     <%= message.body %>
     <p class="time"> <%= time_ago_in_words(message.created_at) %> ago</p>
