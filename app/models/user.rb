@@ -32,12 +32,12 @@ class User < ApplicationRecord
     case status
     when 'online'
       'bg-success'
-    when 'away'
+    when 'Away'
       'bg-warning'
     when 'offline'
       'bg-dark'
     else
-      'bg-dark'
+      'bg-warning'
     end
   end
 
