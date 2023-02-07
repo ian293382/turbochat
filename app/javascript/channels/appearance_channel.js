@@ -1,5 +1,6 @@
 import consumer from "channels/consumer";
 
+  let resetFunc;
   let timer = 0;
 
   consumer.subscriptions.create(
@@ -15,6 +16,7 @@ import consumer from "channels/consumer";
       // Called when the subscription is ready for use on the server.
       connected() {
         this.online();
+        resetFunt = () => this.resetTimer(this.uninstall);
       },
 
       // Called when the WebSocket connection is closed.
