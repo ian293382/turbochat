@@ -10,7 +10,10 @@ class UsersController < ApplicationController
 
     # 要能夠送出訊息啊
     @message = Message.new
-    @messages = Message.where(room_id: @single_room).order(created_at: :asc)
+
+    pagy_message = @single_room.messages.order(created_at: :desc)
+    @pagy, messages = pagy(pagy_message, items: 5)
+    @messages = messages.reverse
     # 總回表
     render 'rooms/index'
   end

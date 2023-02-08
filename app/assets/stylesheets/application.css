@@ -63,13 +63,13 @@ body {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #555555;
+  background-color: #555;
 }
 
 .user_row {
   height: 50px;
   padding: 10px;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid #555;
 }
 
 .username {
@@ -84,11 +84,11 @@ body {
 }
 .user_list_item {
   height: 55px;
-  background-color: #343a40 !important;
+  background-color: #343a50 !important;
 }
 .room_list_item {
   height: 55px;
-  background-color: #343a40 !important;
+  background-color: #343a50 !important;
   color: #fff;
 }
 
