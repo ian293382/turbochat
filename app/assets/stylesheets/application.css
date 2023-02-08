@@ -23,13 +23,12 @@ body {
   padding: 10px;
 }
 
-
 #single_room {
-  height: calc(100vh - 150 px);
+  height: calc(100vh - 150px);
 }
 
 #messages {
-  height: calc(100vh - 150 px);
+  height: calc(100vh - 150px);
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -37,14 +36,14 @@ body {
 #room_container {
   height: 100vh;
   margin-right: 0px !important;
-
 }
+
 #side_panel {
-  height: 100vh;
-  margin-right:  0px !important;
+  height: calc(100vh - 55px);
+  margin-right: 0px !important;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-bottom:  55px;
+  margin-bottom: 55px;
 }
 #chatroom_container {
   height: 100vh;
@@ -53,39 +52,24 @@ body {
   overflow-y: hidden;
 }
 
-.msg-form {
-  width:  80%;
-  margin-right: 5px;
-}
-
 .msg-content {
   width: 80%;
   margin-right: 5px;
-  word-wrap: break-word;
 }
-
-.msessage-box {
+.message-box {
   word-wrap: break-word;
-  width:  fit-content;
-  overflow-y: scroll;
+  width: fit-content;
   max-width: 40%;
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #555;
-  padding: 10px;
-}
-
-.messages-container {
-  height: 100vh;
-  overflow-y: scroll;
-  background-color: #000500;
+  background-color: #555555;
 }
 
 .user_row {
   height: 50px;
   padding: 10px;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #555555;
 }
 
 .username {
@@ -98,31 +82,14 @@ body {
   border-radius: 50%;
   margin-right: 10px;
 }
-
-.user_row{
-  height: 50px;
-  padding: 10px;
-  border-bottom: 1px solid #555;
-}
-
-.username {
-  overflow: hidden;
-}
-
-.chat_pfp {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
 .user_list_item {
   height: 55px;
-  background-color: #343a50 !important;
+  background-color: #343a40 !important;
 }
-
 .room_list_item {
   height: 55px;
-  background-color: #343a50 !important;
+  background-color: #343a40 !important;
+  color: #fff;
 }
 
 .name {
@@ -130,14 +97,12 @@ body {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-
 .time {
   padding-top: 0px;
   margin-top: 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-
 .icon-container {
   width: 50px;
   height: 50px;
@@ -146,12 +111,10 @@ body {
 .status-circle {
   width: 15px;
   height: 15px;
-  border-radius: 50px;
-  background-color: #777;
+  border-radius: 50%;
+  background-color: grey;
   border: 2px solid white;
   bottom: 10px;
   right: 10px;
   position: absolute;
 }
-
-
