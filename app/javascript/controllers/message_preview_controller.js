@@ -1,5 +1,3 @@
-
-
 import { Controller } from "@hotwired/stimulus";
 
 /**
@@ -19,6 +17,14 @@ export default class extends Controller {
       const reader = new FileReader();
       this.createAndDisplayFilePreviewElements(file, reader);
     }
+    this.toggleVisiblity();
+  }
+  /**
+   * Toggle the visibility of the preview div.
+   */
+  toggleVisiblity() {
+    let preview = document.getElementById("attachment-previews");
+    preview.classList.toggle("d-none");
   }
   /**
    * Creates and displays the preview elements for the file.
@@ -78,7 +84,6 @@ export default class extends Controller {
   /**
    * Create an image preview element. This is used for images that are
    * of type: jpg, png, or gif.
-   * This is using boostrap icon cdn "bi"
    * @param {*} cancelFunction - The function to be called when the cancel button is clicked
    * @param {*} reader - The FileReader object
    * @returns {HTMLElement} - The element to be added to the DOM
@@ -195,11 +200,18 @@ export default class extends Controller {
     target.parentNode.removeChild(target);
     filesArray.forEach((file) => dataTransfer.items.add(file));
     fileInput.files = dataTransfer.files;
+
+    if (filesArray.length === 0) {
+      this.toggleVisiblity();
+    }
   }
   /**
    * Clear all the preview elements after submit
    */
   clearPreviews() {
     document.getElementById("attachment-previews").innerHTML = "";
+
+    let preview = document.getElementById("attachment-previews");
+    preview.classList.add("d-none");
   }
 }
