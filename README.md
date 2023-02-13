@@ -2,6 +2,9 @@
 
 Build your first 50 Rails apps as quickly as possible. - https://ihower.tw/rails/rails-recipes-front-end.html
 
+It is finsih to from Turbochat Part 7
+Part 8/9 have some bug so i can't fix it
+
 Development Setup
 Commands that were run during development:
 
@@ -17,7 +20,9 @@ Making Stimulus Work https://blog.minthesize.com/stimulus-reflex-importmaps
 
 Adding Devise User Avatars https://deanin.com/blog/action-text/ https://www.youtube.com/watch?v=BYvzLYRIZK4
 
-Turbo: https://turbo.hotwired.dev/
+Turbo: https://github.com/Deanout/turbo_chatroom
+
+ bin/importmap pin stimulus-use
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
